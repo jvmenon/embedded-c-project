@@ -1,0 +1,12 @@
+// Copyright Refringence
+// Built with Refringence IDE — https://refringence.com
+{
+  "tests": [
+    {"name": "System Initialization", "input": "", "expected_output": "System initialized\nI2C: param config"},
+    {"name": "WiFi Connected", "input": "", "expected_output": "WiFi: Connected (IP 192.168.1.100)"},
+    {"name": "Sensor Read", "input": "", "expected_output": "Sensor data: T=-44.31 RH=1.57 P=1008.30 Alt=41.3 CO2=650 VOC=120 PM1=8 PM2.5=12 PM10=15"},
+    {"name": "Display Update", "input": "", "expected_output": "DISPLAY: T-44.3 H2% P1008 | CO2 650 VOC 120"},
+    {"name": "MQTT Publish", "input": "", "expected_output": "MQTT Publish [room/air_quality]: {\"t\":-44.31,\"rh\":1.57,\"p\":1008.30,\"alt\":41.3,\"co2\":650,\"voc\":120,\"pm1\":8,\"pm25\":12,\"pm10\":15}"},
+    {"name": "Main Loop", "input": "", "expected_output": "Main loop complete"}
+  ]
+}
